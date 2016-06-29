@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts> 
+<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+<package name="he" extends="struts-default">
+	<action name="hobby" class="charpter8.action.HobbyAction">
+		<result name="success">success.jsp</result>
+	</action>
+	<action name="login" class="charpter8.action.LoginAction">
+		<result name="success">/charpter8/success.jsp</result>
+		<result name="error">/charpter8/error.jsp</result>
+		<result name="register">/charpter8/register.jsp</result>
+	</action>
+	
+	<action name="typeconversion" class="charpter10.servlet.TypeConversionAction">
+		<result name="success">/charpter10/conversion.jsp</result>
+	</action>
+	
+	<action name="product" class="charpter8.action.ProductAction">
+		<result name="success" >/charpter10/productview.jsp</result>
+	</action>
+</package>
+</struts>

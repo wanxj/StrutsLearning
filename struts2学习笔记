@@ -1,0 +1,20 @@
+如果要用注解来配置struts，要引入的包有：struts-convention-plugin,asm,asm-common。但是这三
+个包引入之后会引起struts.xml配置的action失效（我也不知道为什么）
+
+三目运算符：var = exp1 ? exp2 : exp3; 当表达式1为真的时候就将表达式2的值赋给变量var，当表达式1
+的值为假的时候就将表达式3的值赋值给变量var
+
+出错点：counter = (counter==null) ? 1 : (counter++);这条语句不管循环执行多少次，counter
+的值都是1，因为++操作符总是在赋值语句执行之后执行，并且++的结果不会保存在counter中。
+正确的写法是: counter = (counter==null) ? 1: (++counter);
+
+传递给同一个Action，但需要执行Action中不同的方法。使用 !+方法名
+
+在form中的action,写成完整的路径名/项目名/url   在url-pattern中 写成/url  也可以不写项目名
+
+jsp页面要取得action类中的属性 用struts标签的方法是<s:property value="attributes name"/>
+
+arraylist linkedlist vector之间是不能进行相互转换的
+
+if the eclipse project has a red ink, please find problems in Problems tag.
+
